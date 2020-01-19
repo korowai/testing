@@ -1,0 +1,38 @@
+{
+    "name": "korowai/testing",
+    "description": "A library of reusable classes and traits for unit-testing",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "suport": {
+      "issues": "https://github.com/korowai/framework/issues",
+      "source": "https://github.com/korowai/framework"
+    },
+    "authors": [
+        {
+            "name": "Paweł Tomulik",
+            "email": "ptomulik@meil.pw.edu.pl"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "korowai/basiclib": "*"
+    },
+    "autoload": {
+      "psr-4" : {
+      },
+      "files" : [
+      ],
+      "exclude-from-classmap": [
+        "/tests/",
+        "/Testing/"
+      ]
+    },
+    "autoload-dev": {
+      "psr-4" : {
+        "Korowai\\Tests\\Testing\\" : "tests/",
+        "Korowai\\Testing\\" : "/Testing/"
+      }
+    }
+}
